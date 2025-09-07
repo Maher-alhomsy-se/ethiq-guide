@@ -8,6 +8,8 @@ export const WALLET_ABI = [
   'function depositToken(bytes32 userId, uint256 amount) external',
   'function getEthBalance(bytes32 userId) external view returns (uint256)',
   'function getTokenBalance(bytes32 userId) external view returns (uint256)',
+  'function withdrawToken(bytes32 userId, address to, uint256 amount) external',
+  'function pay(bytes32 userId, address to, uint256 amount) external',
 ];
 
 export const TOKEN_ADDRESS = '0x586086B58c8A1A0f0D4948eC52f073B485066dA1';
